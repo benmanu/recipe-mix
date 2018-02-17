@@ -3,7 +3,7 @@
   "description": "SilverStripe recipe for Laravel Mix",
   "type": "silverstripe-recipe",
   "require": {
-      "silverstripe/recipe-plugin": "^0.1"
+      "silverstripe/recipe-plugin": "^1"
   },
   "extra": {
       "project-files": [
