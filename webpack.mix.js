@@ -1,11 +1,12 @@
 const mix = require('laravel-mix');
+const themeDir = 'themes/mix/';
 
 mix
-  .extract(['vue'], 'dist/vendor.js')
-  .js('src/app.js', 'dist/');
+  .extract(['vue'], themeDir + 'dist/vendor.js')
+  .js(themeDir + 'src/app.js', themeDir + 'dist/');
 
 mix.webpackConfig({
   output: {
-    chunkFilename: 'dist/chunks/[name].js',
+    chunkFilename: themeDir + 'chunks/[name].js',
   },
 });

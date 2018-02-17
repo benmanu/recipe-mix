@@ -10,7 +10,8 @@
           ".babelrc",
           ".eslintrc.js",
           "package.json",
-          "webpack.mix.js"
+          "webpack.mix.js",
+          "themes/mix/*"
       ]
   },
   "prefer-stable": true,
