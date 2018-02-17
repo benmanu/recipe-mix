@@ -1,0 +1,28 @@
+{
+  "name": "mix",
+  "version": "1.0.0",
+  "description": "Default buildchain - yarn, webpack, ES6, SASS, vue",
+  "main": "dist/app.js",
+  "author": "Ben Manu <ben@silverstripe.com>",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "lint": "eslint src/**/*"
+  },
+  "engines": {
+    "node": ">=6.9"
+  },
+  "dependencies": {
+    "laravel-mix": "^2.0.0",
+    "vue": "^2.5.13"
+  },
+  "devDependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "eslint": "^4.18.0",
+    "eslint-plugin-vue": "^4.2.2",
+    "jest": "^22.3.0"
+  }
+}
