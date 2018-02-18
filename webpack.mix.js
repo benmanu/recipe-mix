@@ -7,6 +7,6 @@ mix
 
 mix.webpackConfig({
   output: {
-    chunkFilename: themeDir + 'chunks/[name].js',
+    chunkFilename: themeDir + 'dist/chunks/[name].js',
   },
 });

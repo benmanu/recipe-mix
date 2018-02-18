@@ -1,5 +1,7 @@
+import 'babel-polyfill';
+import 'classlist-polyfill';
+import 'isomorphic-fetch';
 import Vue from 'vue';
-// import Notification from './components/Notification.vue';
 
 new Vue({
   el: '#app',
