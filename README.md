@@ -6,7 +6,7 @@ Recipe to add Laravel Mix build chain dependencies to a SilverStripe project. Th
 - `.eslintrc.js`: [eslint config file](https://eslint.org/)
 - `package.json`: [Laravel Mix](https://github.com/JeffreyWay/laravel-mix), [Vue](https://vuejs.org/), [Jest](https://facebook.github.io/jest/)
 
-Provides chunk loading of Vue components for optimised component loading (on loads a component when used), aswell as some polyfills etc.
+Provides chunk loading of Vue components for optimised component loading (only loads a component when used), aswell as some polyfills etc.
 
 ## Installation ##
 
@@ -27,3 +27,9 @@ or NPM:
     npm run production
 
 By default a `themes/mix/` folder is included as a starter theme. You can either set this to be the project theme, and add your template files. Alternatively you can change the theme source by editing the `themeDir` variable defined in the `webpack.mix.js` file.
+
+The `themes/mix/src/` directory contains all of the dev application files.
+
+The `themes/mix/dist/` directory contains the compiled files.
+
+When loading the compiled files into your template the `manifest.js` file must be the first one included.
