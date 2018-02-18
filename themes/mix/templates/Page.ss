@@ -9,7 +9,10 @@
         $MetaTags(false)
     </head>
     <body>
-        <div id="app"></div>
+        <div id="app">
+            <v-notification></v-notification>
+            <v-heading></v-heading>
+        </div>
 
         <script src="{$ThemeDir}/dist/manifest.js"></script>
         <script src="{$ThemeDir}/dist/vendor.js"></script>

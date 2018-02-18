@@ -6,6 +6,8 @@ Recipe to add Laravel Mix build chain dependencies to a SilverStripe project. Th
 - `.eslintrc.js`: [eslint config file](https://eslint.org/)
 - `package.json`: [Laravel Mix](https://github.com/JeffreyWay/laravel-mix), [Vue](https://vuejs.org/), [Jest](https://facebook.github.io/jest/)
 
+Provides chunk loading of Vue components for optimised component loading (on loads a component when used), aswell as some polyfills etc.
+
 ## Installation ##
 
 Install the recipe with the following composer call
